@@ -3,126 +3,85 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FinTracker – Privacy Policy</title>
-
+  <title>FinTracker — Privacy Policy</title>
   <style>
-    :root {
-      --yellow: #FFD200;
-      --black: #111;
-      --gray: #6b7280;
-      --bg: #f8fafc;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
-      background: linear-gradient(180deg, var(--yellow) 0%, #ffe066 40%, var(--bg) 100%);
-      color: var(--black);
-    }
-
-    header {
-      text-align: center;
-      padding: 48px 16px 32px;
-    }
-
-    header img {
-      max-width: 220px;
-    }
-
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 0 16px 64px;
-    }
-
-    .card {
-      background: #fff;
-      border-radius: 16px;
-      padding: 32px;
-      box-shadow: 0 10px 30px rgba(0,0,0,.08);
-    }
-
-    h1 {
-      margin-top: 0;
-      font-size: 32px;
-    }
-
-    h2 {
-      margin-top: 28px;
-      font-size: 20px;
-    }
-
-    p, li {
-      line-height: 1.7;
-      color: #333;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 14px;
-      color: var(--gray);
-    }
-
-    footer a {
-      color: var(--black);
-      text-decoration: none;
-      font-weight: 600;
-    }
+    :root{--yellow:#FFD200;--yellow2:#FFE36A;--black:#111;--muted:#6b7280;--bg:#f8fafc;--card:#fff;--shadow:0 12px 35px rgba(0,0,0,.10);--radius:18px}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu;color:var(--black);
+      background: radial-gradient(900px 500px at 50% 0%, rgba(255,255,255,.65), rgba(255,255,255,0)),
+                  linear-gradient(180deg,var(--yellow) 0%,var(--yellow2) 38%,var(--bg) 100%)}
+    .wrap{max-width:980px;margin:0 auto;padding:0 16px 64px}
+    header{padding:42px 0 14px;text-align:center}
+    header img{max-width:190px;height:auto}
+    .top{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:10px 0 18px}
+    .badge{padding:8px 12px;border-radius:999px;border:1px solid rgba(17,17,17,.10);background:rgba(255,255,255,.6);text-decoration:none;color:var(--black);font-weight:650;font-size:13px}
+    main{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid rgba(17,17,17,.06);padding:28px}
+    h1{margin:0 0 10px;font-size:30px;letter-spacing:-.4px}
+    h2{margin:24px 0 8px;font-size:18px}
+    p,li{line-height:1.7;color:#333}
+    ul{padding-left:20px}
+    .muted{color:var(--muted);font-size:13px}
+    footer{margin-top:24px;padding-top:16px;border-top:1px solid rgba(17,17,17,.08)}
+    code{background:#f3f4f6;padding:2px 6px;border-radius:6px}
   </style>
 </head>
-
 <body>
+  <div class="wrap">
+    <header>
+      <img src="assets/logo.png" alt="FinTracker logo">
+      <div class="top">
+        <a class="badge" href="index.html">← Legal Home</a>
+        <a class="badge" href="privacy-policy-pt.html">Português</a>
+        <span class="badge">Last updated: 2026-01-26</span>
+      </div>
+    </header>
 
-<header>
-  <img src="assets/logo.png" alt="FinTracker logo">
-</header>
+    <main>
+      <h1>Privacy Policy</h1>
+      <p>FinTracker respects your privacy and is committed to protecting your data.</p>
 
-<main>
-  <div class="card">
-    <h1>Privacy Policy</h1>
+      <h2>Information we collect</h2>
+      <ul>
+        <li><strong>Account data:</strong> name and email address (Google Sign-In) and a user identifier (UID).</li>
+        <li><strong>User content:</strong> data you enter in the app (expenses, categories, values, dates, notes).</li>
+        <li><strong>Basic technical data:</strong> information needed to operate authentication and app sessions.</li>
+      </ul>
 
-    <p>FinTracker respects your privacy and is committed to protecting your data.</p>
+      <h2>How we use information</h2>
+      <ul>
+        <li>Authenticate users and keep accounts secure.</li>
+        <li>Store and display your financial records.</li>
+        <li>Provide and improve app functionality.</li>
+      </ul>
 
-    <h2>Information we collect</h2>
-    <ul>
-      <li>Name and email address (Google Sign-In)</li>
-      <li>User identifier (UID)</li>
-      <li>Financial data entered by the user (expenses, categories, values)</li>
-    </ul>
+      <h2>Data storage and processors</h2>
+      <p>We use Google Firebase services to run core features:</p>
+      <ul>
+        <li><strong>Firebase Authentication</strong> — sign-in and identity.</li>
+        <li><strong>Cloud Firestore</strong> — storage of expense data linked to your account.</li>
+      </ul>
 
-    <h2>How we use information</h2>
-    <ul>
-      <li>User authentication</li>
-      <li>Store and display personal financial data</li>
-      <li>Improve app functionality</li>
-    </ul>
+      <h2>Data sharing</h2>
+      <p>We do not sell your personal data. We do not share your personal data with third parties, except as required to provide the service (Firebase) or when legally required.</p>
 
-    <h2>Data storage</h2>
-    <p>
-      We use Google Firebase services, including Firebase Authentication and
-      Cloud Firestore, to securely store user data.
-    </p>
+      <h2>Data security</h2>
+      <p>We take reasonable measures to protect your data. Access is restricted via authentication and database security rules.</p>
 
-    <h2>Data deletion</h2>
-    <p>
-      You may request deletion of your account and data by contacting:
-      <strong>fintracker.app@gmail.com</strong>
-    </p>
+      <h2>Data retention</h2>
+      <p>Your data is kept while your account is active. You can request deletion at any time.</p>
 
-    <footer>
-      Last updated: January 2026<br>
-      <a href="index.html">← Back to Legal Home</a>
-    </footer>
+      <h2>Data deletion request</h2>
+      <p>
+        To request deletion of your account and associated data, email us at
+        <strong>fintracker.app@gmail.com</strong> with subject: <code>Data Deletion Request</code>.
+      </p>
+
+      <footer>
+        <p class="muted">Contact: <a href="mailto:fintracker.app@gmail.com">fintracker.app@gmail.com</a></p>
+      </footer>
+    </main>
   </div>
-</main>
-
 </body>
 </html>
+
 
