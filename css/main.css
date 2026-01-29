@@ -2087,3 +2087,11 @@ input:focus {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
+
+/* Lifetime pricing card - works without Tailwind build */
+.lifetime-card {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  border: 2px solid #334155;
+  color: #ffffff;
+}
